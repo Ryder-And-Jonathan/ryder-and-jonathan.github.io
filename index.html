@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryder & Jonathan</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0a0a0a;
+            color: #00ffea;
+            font-family: Consolas, monospace;
+            overflow-x: hidden;
+        }
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: repeating-linear-gradient(
+                to bottom,
+                rgba(255,255,255,0.02) 0px,
+                rgba(255,255,255,0.02) 2px,
+                rgba(0,0,0,0.02) 2px,
+                rgba(0,0,0,0.02) 4px
+            );
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 1.2s ease-out;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 12px #00ffee;
+        }
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: 2px solid #00ffea;
+            color: #00ffea;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.2s;
+        }
+        .button:hover {
+            background: #00ffea;
+            color: #000;
+            box-shadow: 0 0 15px #00ffea;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<div class="container">
+    <h1>Ryder & Jonathan</h1>
+    <p>we be chillin</p>
+    <p>Site hosted on GitHub Pages, powered by well.... Github</p>
+
+    <a class="button" href="https://github.com/Ryder-And-Jonathan" target="_blank">GitHub</a>
+</div>
+
+</body>
+</html>
